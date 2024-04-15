@@ -1,7 +1,7 @@
 ## 项目介绍
 
 这个项目是使用VsCode+PlatformIO框架与Wemos+TFT显示屏展示天气情况的演示。    
-开发板Wemos D1 是一个基于ESP8266的微控制器开发。    
+开发板Wemos D1 是一个基于ESP8266的微控制器单片机，可以通过WiFi连接到互联网。    
 TFT显示屏是一个小型的彩色液晶屏，可以用于显示图形和文本。
 
 ## 效果展示
@@ -35,8 +35,8 @@ TFT显示屏是一个小型的彩色液晶屏，可以用于显示图形和文�
 本人使用的数据来自高德的API，请按照以下步骤进行操作：
 
 1. 登录高德开发者平台，创建一个应用，获取应用的Key。
-2. Key填入`src/Weather.h`文件中的`AMAP_KEY`变量。
-3. 修改`src/Weather.h`文件中的`POST_CODE`变量为你所在城市的邮政编码。
+2. Key填入`src/Setting.h`文件中的`API_KEY`变量。
+3. 修改`src/Setting.h`文件中的`POST_CODE`变量为你所在城市的邮政编码。
 
 ## 贡献
 
@@ -66,8 +66,8 @@ This project has the following dependencies:
 ## Weather Data
 The data used in this project is from the AMap API. Follow these steps:
 1. Log in to the AMap developer platform, create an application, and obtain the application's key.
-2. Fill in the key in the `AMAP_KEY` variable in the `src/Weather.h` file.
-3. Modify the `POST_CODE` variable in the `src/Weather.h` file to the postal code of your city.
+2. Fill in the key in the `API_KEY` variable in the `src/Setting.h` file.
+3. Modify the `POST_CODE` variable in the `src/Setting.h` file to the postal code of your city.
 ## Contribution
 Contributions to this project are welcome. If you find any issues or have any suggestions, please open an issue or submit a pull request on the GitHub repository.
 ## License
